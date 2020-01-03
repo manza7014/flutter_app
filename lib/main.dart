@@ -9,8 +9,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Startup Name Generator',
-      home:  SampleAppPage(),
-//      home: new RandomWords(),
+//      home:  SampleAppPage(),
+      home: new RandomWords(),
     );
   }
 }
@@ -74,7 +74,8 @@ class RandomWordState extends State<RandomWords> {
         elevation: 20,
         title: new Text('Startup Name Generator'),
         actions: <Widget>[
-          new IconButton(icon: const Icon(Icons.list), onPressed: _pushSaved)
+          new IconButton(icon: const Icon(Icons.list), onPressed: _pushSaved),
+          new IconButton(icon: const Icon(Icons.add), onPressed: _pushSaved),
         ],
       ),
       body: _buildSuggestions(),
@@ -100,7 +101,7 @@ class RandomWordState extends State<RandomWords> {
         appBar: new AppBar(
           title: const Text('Saved Suggestions'),
         ),
-        body: new ListView(children: divided,),
+        body: new ListView(children: divided),
       );
     }));
   }
