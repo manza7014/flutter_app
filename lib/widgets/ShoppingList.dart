@@ -15,6 +15,7 @@ class ShoppingList extends StatefulWidget {
 
 class ShoppingListState extends State<ShoppingList> {
   Set<Product> _shoppingCart = Set<Product>();
+  
 
   void _handleCartChanged(Product product, bool inCart) {
     setState(() {
