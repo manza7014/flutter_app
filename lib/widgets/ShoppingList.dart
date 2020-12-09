@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/widgets/ShoppingListItem.dart';
-
 class ShoppingList extends StatefulWidget {
   final List<Product> products;
 
   ShoppingList({Key key, this.products}) : super(key: key);
+
 
   @override
   State<StatefulWidget> createState() {

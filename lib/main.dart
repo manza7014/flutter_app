@@ -11,16 +11,17 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var products = <Product>[
+          Product(name: 'Eggs'),
+          Product(name: 'Flour'),
+          Product(name: 'Chocolate chips'),
+        ];
     return MaterialApp(
       title: 'Startup Name Generator',
 //      home:  SampleAppPage(),//更新文本
 //      home: new MyScaffold(), //控件练习
       home: ShoppingList(
-        products: <Product>[
-          Product(name: 'Eggs'),
-          Product(name: 'Flour'),
-          Product(name: 'Chocolate chips'),
-        ],
+        products: products,
       ), //列表
     );
   }
